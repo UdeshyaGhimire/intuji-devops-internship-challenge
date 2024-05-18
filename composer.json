@@ -1,0 +1,35 @@
+{
+    "name": "silarhi/hello-world",
+    "type": "library",
+    "description": "A simple hello-world for composer",
+    "keywords": ["hello", "world", "hello-world", "webforce3", "silarhi"],
+    "homepage": "https://silarhi.fr",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Guillaume Sainthillier",
+            "email": "guillaume@silarhi.fr"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Silarhi\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Silarhi\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "platform": {
+            "php": "7.4.0"
+        }
+    },
+    "require": {
+        "php": ">=7.4.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    }
+}
