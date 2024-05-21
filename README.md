@@ -1,6 +1,3 @@
-# php-hello-world
-A simple hello-world for composer
-
 
 # PHP Hello World Docker Project
 
@@ -134,6 +131,8 @@ server {
 
 <img width="472" alt="Screenshot 2024-05-21 at 13 40 12" src="https://github.com/UdeshyaGhimire/intuji-devops-internship-challenge/assets/76220126/d422d044-7230-4fc6-b660-c41b69c3e036">
 
+
+
 ## Build and Run the Docker Container
 
 1. To Build the image as :
@@ -164,15 +163,32 @@ curl localhost
 ```
 <img width="687" alt="Screenshot 2024-05-21 at 14 01 19" src="https://github.com/UdeshyaGhimire/intuji-devops-internship-challenge/assets/76220126/06b16690-53e0-4b5d-9fb0-050e6c305590">
 
-# 4) Push your docker image to the docker hub.
+# 4) Creating Docker Compose File
 
-1) Tag Your Docker Image: Tag your local Docker image with your Docker Hub username and the desired repository name using the following command:
+
+  Created a compose file as "docker-composer.yml on the root directory
+  The content of the file is following:
+
+
+<img width="734" alt="Screenshot 2024-05-21 at 14 20 43" src="https://github.com/UdeshyaGhimire/intuji-devops-internship-challenge/assets/76220126/0d5c1733-da78-4e34-abe6-aaa3b05ebdc1">
+
+
+# 5) Push your docker image to the docker hub.
+
+
+1) Tag Your Docker Image:
+
+
+   Tag your local Docker image with your Docker Hub username and the desired repository name using the following command:
 
 ```sh
 docker tag local-image-name yourusername/repository-name:tag
 ```
 
-2) Log In to Docker Hub: Use the docker login command to log in to Docker Hub:
+2) Log In to Docker Hub:
+
+
+ Use the docker login command to log in to Docker Hub:
 
 ```sh
 
@@ -180,11 +196,91 @@ docker login
 Enter your Docker Hub username and password when prompted.
 ```
 
+<img width="812" alt="Screenshot 2024-05-21 at 14 14 14" src="https://github.com/UdeshyaGhimire/intuji-devops-internship-challenge/assets/76220126/568b1398-f695-4982-bbda-088a5f45334f">
+
+Created a Repo in Dockerhub
+
 <img width="1440" alt="Screenshot 2024-05-19 at 10 20 10" src="https://github.com/UdeshyaGhimire/intuji-devops-internship-challenge/assets/76220126/f2bf9608-6424-48c1-9437-101435e4cc9f">
 
 
-3) Push Your Docker Image to Docker Hub: Use the docker push command to push your tagged image to Docker Hub:
+3) Push Your Docker Image to Docker Hub:
+
+
+   Use the docker push command to push your tagged image to Docker Hub:
 
 ```sh
 docker push yourusername/repository-name:tag
 ```
+<img width="1440" alt="Screenshot 2024-05-19 at 10 35 58" src="https://github.com/UdeshyaGhimire/intuji-devops-internship-challenge/assets/76220126/cb16d16c-3f88-422b-99df-8d031c28fdf0">
+
+Successfully Pushed the docker image to the docker hub.
+
+
+<img width="1440" alt="Screenshot 2024-05-19 at 10 40 11" src="https://github.com/UdeshyaGhimire/intuji-devops-internship-challenge/assets/76220126/c465f3aa-85f0-47a4-bdd5-ee12e8109f38">
+
+
+# 6) Install Jenkins
+
+1: Install Jenkins
+
+
+You can install Jenkins using Homebrew by running:
+
+```sh
+
+brew install jenkins
+```
+![Screenshot 2024-05-20 at 20 49 57](https://github.com/UdeshyaGhimire/intuji-devops-internship-challenge/assets/76220126/8d477ddf-9581-4176-aed8-ac1852263e08)
+
+2: Start Jenkins
+
+
+Once the installation is complete, you can start Jenkins using the following command:
+
+```sh
+
+brew services start jenkins
+```
+3: Access Jenkins
+
+
+By default, Jenkins should be accessible at http://localhost:8080. You can open this URL in your web browser to access the Jenkins web interface.
+
+Step 6: Unlock Jenkins
+
+During the first access, Jenkins will ask for an initial admin password. You can find this password by running:
+
+```sh
+
+cat /usr/local/var/jenkins/home/secrets/initialAdminPassword
+```
+Copy the password and paste it into the Jenkins web interface to proceed with the setup.
+![Screenshot 2024-05-20 at 20 57 17](https://github.com/UdeshyaGhimire/intuji-devops-internship-challenge/assets/76220126/98698f60-b020-4c8c-83fc-369f8e982e2d)
+
+4: Complete Setup
+Setup will be completed after you copy the password here.
+
+
+![Screenshot 2024-05-20 at 20 56 27](https://github.com/UdeshyaGhimire/intuji-devops-internship-challenge/assets/76220126/f0eb473a-918b-41d4-aae3-b62f6219ce90)
+
+# 7) Buildind CI/CD with Jenkins
+
+
+-Click into New item and select Freestyle Project
+
+![Screenshot 2024-05-20 at 21 45 08 (2)](https://github.com/UdeshyaGhimire/intuji-devops-internship-challenge/assets/76220126/dd1b000d-25d1-4fb3-89bf-87511cf07b13)
+
+
+Due to some error in the github plugins I could not finish the jenkins task rather i created a pipeline through shell directly and here are the results:
+
+![Screenshot 2024-05-20 at 21 35 47](https://github.com/UdeshyaGhimire/intuji-devops-internship-challenge/assets/76220126/55935b72-c168-4d66-9059-2d378fc4a47e)
+
+
+
+![Screenshot 2024-05-20 at 23 02 09](https://github.com/UdeshyaGhimire/intuji-devops-internship-challenge/assets/76220126/a85f3051-a78a-4035-9134-09c9c74f00da)
+
+
+![Screenshot 2024-05-21 at 14 59 02](https://github.com/UdeshyaGhimire/intuji-devops-internship-challenge/assets/76220126/804bf0c4-ea92-42f3-824d-ef13d9505eee)
+
+![Screenshot 2024-05-21 at 14 52 23](https://github.com/UdeshyaGhimire/intuji-devops-internship-challenge/assets/76220126/53e1c713-f94d-4621-83e9-948c35635b49)
+
