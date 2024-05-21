@@ -287,6 +287,12 @@ Due to some error in the instalization of github plugins i could not add git plu
 
 ![Screenshot 2024-05-21 at 14 52 23](https://github.com/UdeshyaGhimire/intuji-devops-internship-challenge/assets/76220126/53e1c713-f94d-4621-83e9-948c35635b49)
 
+Console Output
+
+![Screenshot 2024-05-21 at 15 16 43](https://github.com/UdeshyaGhimire/intuji-devops-internship-challenge/assets/76220126/f87c648b-68cf-4c03-a55c-56aaa9e46c66)
+
+![Screenshot 2024-05-21 at 15 16 54](https://github.com/UdeshyaGhimire/intuji-devops-internship-challenge/assets/76220126/d47e5bf2-e6e6-47a5-8923-be20d4679cef)
+
 ## Conclusion
 README provides a comprehensive guide for setting up a DevOps environment for a PHP project, covering the installation of Docker, Docker Compose, and Jenkins. The use of Bash scripting for Docker installation, Dockerization of the PHP project, and the integration of Jenkins for continuous integration and continuous deployment (CI/CD) adds a robust and automated workflow to the development process.
 
