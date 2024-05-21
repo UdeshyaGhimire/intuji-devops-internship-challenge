@@ -271,7 +271,7 @@ Setup will be completed after you copy the password here.
 ![Screenshot 2024-05-20 at 21 45 08 (2)](https://github.com/UdeshyaGhimire/intuji-devops-internship-challenge/assets/76220126/dd1b000d-25d1-4fb3-89bf-87511cf07b13)
 
 
-Due to some error in the github plugins I could not finish the jenkins task rather i created a pipeline through shell directly and here are the results:
+Due to some error in the instalization github plugins i could not add git plugin rather i created a pipeline through shell directly and here are the results:
 
 ![Screenshot 2024-05-20 at 21 35 47](https://github.com/UdeshyaGhimire/intuji-devops-internship-challenge/assets/76220126/55935b72-c168-4d66-9059-2d378fc4a47e)
 
@@ -281,7 +281,8 @@ Due to some error in the github plugins I could not finish the jenkins task rath
 
 
 
-![Screenshot 2024-05-21 at 14 59 02](https://github.com/UdeshyaGhimire/intuji-devops-internship-challenge/assets/76220126/804bf0c4-ea92-42f3-824d-ef13d9505eee)
+![Screenshot 2024-05-21 at 14 59 02](https://github.com/UdeshyaGhimire/intuji-devops-internship-challenge/assets/76220126/b94cc78e-ab6d-4666-9db2-491b1ba8a6a4)
+
 
 ![Screenshot 2024-05-21 at 14 52 23](https://github.com/UdeshyaGhimire/intuji-devops-internship-challenge/assets/76220126/53e1c713-f94d-4621-83e9-948c35635b49)
 
