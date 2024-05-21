@@ -285,3 +285,8 @@ Due to some error in the github plugins I could not finish the jenkins task rath
 
 ![Screenshot 2024-05-21 at 14 52 23](https://github.com/UdeshyaGhimire/intuji-devops-internship-challenge/assets/76220126/53e1c713-f94d-4621-83e9-948c35635b49)
 
+## Conclusion
+README provides a comprehensive guide for setting up a DevOps environment for a PHP project, covering the installation of Docker, Docker Compose, and Jenkins. The use of Bash scripting for Docker installation, Dockerization of the PHP project, and the integration of Jenkins for continuous integration and continuous deployment (CI/CD) adds a robust and automated workflow to the development process.
+
+Overall, this documentation serves as a valuable resource for individuals looking to establish a DevOps pipeline for their PHP projects, fostering efficiency and consistency in the software development life cycle.
+
